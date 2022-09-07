@@ -1,0 +1,28 @@
+/**
+ * Constructor function for new Course objects
+ * @param {string} code
+ * @param {string} name
+ * @param {number} credits
+ * @param {string} maxStudents
+ * @param {number} incompatibileWith
+ * @param {string} preparatoryCourse
+ */
+
+ function Course(
+    code,
+    name,
+    credits,
+    maxStudents = undefined,
+    incompatibileWith = undefined,
+    preparatoryCourse = undefined
+  ) {
+    this.code = code;
+    this.name = name;
+    this.credits = credits;
+    this.maxStudents = maxStudents;
+    this.incompatibileWith = incompatibileWith;
+    this.preparatoryCourse = preparatoryCourse;
+  }
+  
+  export default Course;
+  
